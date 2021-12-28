@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    background-color: rgba(245, 245, 245, 0.836); 
+    font-family: 'Poppins', sans-serif;
+    background: url(images/sliders/loginbg.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+* {
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.based {
+  margin: 1rem;
+}
+.based a {
+  color: #fff;
+  font-weight: bold;
+}
+.form {
+  max-width: 860px;
+  margin: 6rem auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
+  background: rgba(0, 0, 0, 0.781);
+  color: white;
+  border-radius: 0.2rem;
+  position: relative;
+  margin-bottom: 100px;
+  height: 450px;
+}
+.form_content {
+  margin-bottom: 1rem;
+}
+.form-group {
+  color: #333;
+  opacity: 0;
+}
+.form-group_title {
+  color: red;
+  text-transform: uppercase;
+}
+.form-group_input {
+  width: 100%;
+  border-width: 0 0 2px 0;
+  border-bottom: 2px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.form_background {
+  border-radius: 0.2rem;
+  background-color: #fff;
+  padding: 3rem 2rem;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .4);
+  width: 50%;
+  height: 120%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transition: all 0.3s cubic-bezier(0.04, 0.57, 0.15, 1.46);
+}
+.fieldset {
+  flex: 1;
+  margin: 0;
+  border: 0;
+  padding: 0 5rem 0 0;
+}
+.fieldset:first-child {
+  padding-left: 0;
+}
+.fieldset:last-child {
+  padding-left: 5rem;
+  padding-right: 0;
+}
+.radio--invisible {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.button {
+  text-transform: uppercase;
+  padding: 0.6rem 3rem;
+  border: 1px solid #fff;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.button:hover {
+  background-color: black;
+  font-weight: bolder;
+}
+.button--form {
+  background: red;
+  color: #fff;
+  float: right;
+  margin-top: 0;
+}
+.button--form:hover {
+  background: black;
+}
+#noaccount:checked ~ .form_background {
+  transform: translate(3rem, -50%);
+}
+#noaccount:checked ~ .form_background .form-group--account {
+  display: none;
+}
+#noaccount:checked ~ .form_background .form-group--noaccount {
+  display: block;
+  opacity: 0;
+  animation-delay: 0.2s;
+  animation-duration: 0.3s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+#account:checked ~ .form_background {
+  transform: translate(calc(100% - 3rem), -50%);
+}
+#account:checked ~ .form_background .form-group--noaccount {
+  display: none;
+}
+#account:checked ~ .form_background .form-group--account {
+  display: block;
+  animation-delay: 0.2s;
+  animation-duration: 0.3s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+@keyframes slidein {
+  from {
+    opacity: 0;
+ }
+  to {
+    opacity: 1;
+ }
+}
+
+/* Marquee effect start here */
+.marquee {
+    min-width: 500px;
+    line-height: 15px;
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 15px 45px black;
+    margin-bottom: 200px;
+    margin-top: -30px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s linear infinite;
+    font-weight: bolder;
+}
+@keyframes marquee {
+    0%{
+        transform: translate(0, 0); 
+      }
+    100%{
+        transform: translate(-100%, 0); 
+    }
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.logo img{
+    width: 165px;
+}
+                    /* Marquee effect end here */
+</style>
+
+</head>
+<body>
+    <div class="logo">
+    <a href="index.html">
+        <img src="images/logo1.jpg" alt="logo"></a>
+    </div>
+
+    <form action="" class="form">
+  
+        <input id="noaccount" name="radioaccount" type="radio" class="radio radio--invisible" checked />
+        <input id="account" name="radioaccount" type="radio" class="radio radio--invisible"/>
+        <div class="form_background">
+          <div class="form-group form-group--account">
+            <h3 class="form-group_title">Log in</h3>
+            <input class="form-group_input" type="email" placeholder="Email"/>
+            <input class="form-group_input" type="password" placeholder="Password"/>
+            <button class="button button--form">Log in</button>
+          </div>
+          <div class="form-group form-group--noaccount">
+            <h3 class="form-group_title">Sign up</h3>
+            <input class="form-group_input" type="text" placeholder="First Name" required/>
+            <input class="form-group_input" type="text" placeholder="Last Name"/>
+            <input class="form-group_input" type="email" placeholder="Email" required/>
+            <input class="form-group_input" type="text" placeholder="Investor ID" required/>
+            <input class="form-group_input" type="password" placeholder="Password" name="password" id="password" required/>
+            <input class="form-group_input" type="password" placeholder="Confirm Password" name="password" id="password_confirm" oninput="check(this)" required/>
+            <button class="button button--form">Sign up</button>
+          </div>
+        </div>
+    
+      <fieldset class="fieldset">
+        <h2>Don't have an account ?</h2>
+        <p>For signing up please provide the required information accordingly.</p>
+        <div class="form_content form_content--noaccount">
+          
+        </div>
+        <label for="noaccount" class="button">Sign up</label>
+      </fieldset>
+      <fieldset class="fieldset">
+        <h2>Have an account ?</h2>
+        <p>If you already have an Account than please proceed to LOG IN Page.</p>
+        
+        <div class="form_content form_content--noaccount">
+          
+        </div>
+        <label for="account" class="button">login</label>
+      </fieldset>
+    </form>
+        <div class="marquee">
+            <p>To register with Sahara Hospitality you must to be an Investor or have Shareholders Stack.</p>
+        </div>
+        
+</div>
+<script language='javascript' type='text/javascript'>
+    function check(input) {
+        if (input.value != document.getElementById('password').value) {
+            input.setCustomValidity('Password Must be Matching.');
+        } else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,647 @@
+/* ============================================================================
+                    Global Variable start here
+=============================================================================*/
+:root{
+    --title-font: 'Roboto Slab', serif !important;
+    --body-font: 'Poppins', sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+}
+p{
+    font-family: var(--body-font) !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--title-font) !important;
+}
+ul li{
+    list-style: none !important;
+}
+/* ============================================================================
+                    Global Variable end here
+=============================================================================*/
+
+/* ============================================================================
+                    Header part end here
+=============================================================================*/
+header .container{
+    background: black !important;
+    padding: 5px 0;
+}
+header .header__left{
+    color: white !important;
+    font-family: var(--body-font);
+    font-size: 13px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+header .header__left i{
+    padding: 0px 8px;
+}
+
+header .header__right{
+    color: white !important;
+    text-align: right;
+    font-family: var(--body-font);
+    font-size: 13px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+header .header__right a{
+    color: white;
+    padding: 15px;
+}
+/* ============================================================================
+                    Header part end here
+=============================================================================*/
+/* ============================================================================
+                    Nav part start here
+=============================================================================*/
+.navbar{
+    font-family: var(--body-font) !important; 
+}
+nav .container{
+    background: white !important;
+    box-shadow: 0px 3px 11px -7px black;
+    padding: 10px 0px;
+    padding-right: 5px;
+    height: 100%;
+    margin-top: -10px;
+}
+nav .container button{
+    border: 1px solid red;
+}
+nav .container button:hover{
+    border: 1px solid black;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+.navbar-toggler{
+    background: black;
+}
+.nav-link{
+    color: black !important;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+nav .container #logo{
+    width: 150px;
+    padding: 8px;
+}
+nav .container .nav-item{
+    margin-right: 10px;
+}
+
+
+/* ============================================================================
+                    Nav part end here
+=============================================================================*/
+
+/* ============================================================================
+                    Marquee start here
+=============================================================================*/
+#marquee .container{
+    font-family: var(--body-font) !important;
+    overflow: hidden;
+}
+#marquee .container .liner #scroll__news{
+    margin-top: 4px;
+}
+.liner {
+    width: 100%;
+    height: 40px;
+    margin: -5px 0px -10px 0px;
+}
+marquee {
+    font-size: 15px;
+}
+marquee a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ============================================================================
+                    Marquee end here
+=============================================================================*/
+
+/* ============================================================================
+                    Body Slider start here
+=============================================================================*/
+#slider .container{
+    background: url(../images/body__background.jpg) no-repeat center;
+    background-size: cover;
+}
+.container #carouselExampleDark{
+    width: 90%;
+    margin: 0 auto;
+    max-height: 540px;
+}
+.carousel-item img{
+    max-height: 630px;
+}
+.carousel-dark .carousel-caption h4{
+    color: white !important;
+}
+.carousel-dark .carousel-caption p{
+    color: white !important;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: white !important;
+}
+/* ============================================================================
+                    Body Slider end here
+=============================================================================*/
+
+/* ============================================================================
+                    Demo Services part start here
+=============================================================================*/
+#demoServices .container{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+#demoServices .container .main{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+}
+#demoServices .container .card{
+    padding: 5px;
+    background: black;
+    color: red;
+    border-top: 4px solid red !important;
+    transition: ease-in .5s;
+}
+#demoServices .container .card:hover{
+    background: red !important;
+    color: white !important;
+    cursor: pointer;
+    border-top: 4px solid black !important;
+}
+#demoServices .container .card .card-body{
+    padding: 22px;
+}
+#demoServices .container .card .card-body h5{
+    color: white;
+}
+#demoServices .container .card .card-body p{
+    color: white;
+}
+#demoServices .container .card .card-body span i{
+    font-size: 45px;
+}
+#demoServices .container .card .card-body span i:hover{
+    color: white;
+}
+#demoServices .container .card .card-body h5{
+    padding-top: 20px;
+}
+/* ============================================================================
+                   Demo Services part end here
+=============================================================================*/
+
+
+/* ============================================================================
+                    Offering part start here
+=============================================================================*/
+
+#offer{
+    margin-top: 50px;
+    background: #f8f8f8 !important ;
+    padding-bottom: 100px;
+}
+
+/* ==========================Offer__left start here========================== */
+#offer .container .top{
+    padding: 100px 0px;
+}
+#offer .container .top__left h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    width: 360px;
+}
+#offer .container .top__right .details{
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    padding: 15px 50px;
+    border-left: 4px solid red;
+    padding-left: 40px;
+}
+/* ==========================Offer__left end here========================== */
+
+/* ==========================Offer__right start here========================== */
+
+#offer .bottom .item{
+    background: white;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 50px 0px;
+    color: red;
+    transition: all ease-in .4s;
+}
+#offer .bottom .item i{
+    font-size: 50px;
+    color: red;
+    transition: all ease-in .4s;
+}
+#offer .bottom .item h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 22px 0;
+    transition: all ease-in .4s;
+    color: #000;
+}
+#offer .bottom .item p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    transition: all ease-in .4s;
+    color: #555;
+}
+#offer .bottom .item:hover{
+    background: black;
+    border-radius: 5px;
+}
+#offer .bottom .item:hover i{
+    color: white;
+}
+#offer .bottom .item:hover h4{
+    color: white;
+}
+#offer .bottom .item:hover p{
+    color: white;
+}
+
+/* ==========================Offer__right end here========================== */
+
+
+/* ============================================================================
+                    Offering part end here
+=============================================================================*/
+
+
+/* ============================================================================
+                    Services part start here
+=============================================================================*/
+#services{
+    padding: 50px 0;
+}
+#services .container .main{
+    padding-top: 30px;
+}
+#services .container .main .main__top #text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+}
+#services .container .main .main__top #text .line{
+    width: 100px;
+    height: 2px;
+    background: red;
+    margin: 5px 0px 15px 0px;
+}
+#services .container .main__bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+#services .container .main__bottom .card{
+    margin: 5px;
+}
+#services .container .main__bottom .card .btn{
+    width: 100%;
+    transition: ease-in .5s;
+}
+#services .container .main__bottom .card .btn:hover{
+    background: red;
+    color: white;
+    font-weight: 600;
+}
+/* ============================================================================
+                    Services part end here
+=============================================================================*/
+
+/* ============================================================================
+                    Business part start here
+=============================================================================*/
+
+/* ==========================content__left start here========================== */
+#business .container .content__left img{
+    width: 100%;
+}
+#business .container .content__left .text{
+    background: red;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+}
+#business .container .content__left .text h1{
+    font-family: var(--title-font);
+    font-size: 74px;
+    text-align: center;
+    font-weight: 700;
+}
+#business .container .content__left .text p{
+    font-family: var(--body-font);
+    font-size: 22px;
+    text-align: center ;
+}
+/* ==========================content__left end here========================== */
+
+/* ==========================content__right start here========================== */
+#business{
+    margin-bottom: 100px;
+}
+#business .container .content__right{
+    padding-left: 35px;
+}
+#business .container .content__right h2{
+    font-family: var(--title-font);
+    font-size: 42px;
+    font-weight: 700;
+}
+#business .container .content__right .line{
+    width: 80px;
+    height: 3px;
+    background: #ea3a60;
+    margin: 10px 0;
+}
+#business .container .content__right .text{
+    color: #555;
+    font-family: var(--body-font);
+    font-size: 16px;
+    padding: 20px 0;
+    text-align: left !important;
+    line-height: 1.6;
+}
+#business .container .content__right .text p{
+    margin-bottom: 10px;
+}
+#business .container .content__right a{
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+    display: inline-block;
+    padding: 13px 35px;
+    border: 1px solid red;
+    border-radius: 3px;
+    margin-top: 40px;
+    transition: ease-in .5s;
+}
+#business .container .content__right a:hover{
+    background: red;
+    color: white;
+}
+
+/* ==========================content__right end here========================== */
+
+/* ============================================================================
+                    Business part end here
+=============================================================================*/
+
+/* ============================================================================
+                    Counter part start here
+=============================================================================*/
+#counter{
+    background: url(../images/sliders/loginbg.jpg) no-repeat center;
+    background-size: cover;
+}
+#counter .overlay{
+    height: 100%;
+    background: rgba(255, 0, 0, .6);
+    text-align: center;
+    align-items: center;
+    padding: 125px;
+}
+#counter .item h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    color: white;
+}
+#counter .item p{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ============================================================================
+                    Counter part end here
+=============================================================================*/
+
+/* ============================================================================
+                    Country Value part start here
+=============================================================================*/
+#countryValue{
+    margin-bottom: 100px;
+    background: #f8f8f8 !important;
+}
+#countryValue .container{
+    padding: 100px 0;
+}
+#countryValue .top{
+    text-align: center;
+}
+#countryValue .top h5{
+    font-size: 15px;
+    font-weight: 700;
+}
+#countryValue .top h3{
+    font-weight: 700;
+    font-size: 40px;
+    color: red;
+    margin: 10px 0;
+}
+#countryValue .top p{
+    font-size: 15px;
+}
+#countryValue .bottom{
+    margin-top: 20px;
+}
+#countryValue .bottom .item__1{
+    background: url(../images/countryValue/value__1.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+}
+#countryValue .bottom .item__2{
+    background: url(../images/countryValue/value__2.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+}
+#countryValue .bottom .item__3{
+    background: url(../images/countryValue/value__3.jpg) no-repeat center;
+    height: 200px;
+    background-size: cover;
+}
+#countryValue .bottom .item__4{
+    background: url(../images/countryValue/value__4.jpg) no-repeat center;
+    height: 200px;
+    background-size: cover;
+}
+#countryValue .bottom .item__5{
+    background: url(../images/countryValue/value__5.jpg) no-repeat center;
+    height: 200px;
+    background-size: cover;
+}
+#countryValue .bottom .item__6{
+    background: url(../images/countryValue/value__6.jpg) no-repeat center;
+    height: 200px;
+    background-size: cover;
+}
+#countryValue .bottom .overlay{
+    background: rgba(85, 85, 85, .25);
+    height: 100%;
+    text-align: center;
+}
+#countryValue .bottom .overlay .text{
+    color: white;
+    display: inline-block;
+    padding-top: 60px;
+} 
+#countryValue .bottom .overlay .text h5{
+    font-size: 25px;
+    font-weight: 700;
+}
+#countryValue .bottom .overlay .text p{
+    font-weight: 600;
+    font-size: 15px;
+}
+/* ============================================================================
+                    Country Value part end here
+=============================================================================*/
+
+
+/* ============================================================================
+                    Clients part start here
+=============================================================================*/
+#clients{
+    margin-bottom: 100px;
+    background: url(../images/sliders/loginbg.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+#clients .container{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.425);
+}
+#clients .container .text h5{
+    color: red;
+}
+#clients .container .text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#clients .container .text .line{
+    width: 80px;
+    height: 3px;
+    background: red;
+    margin: 0 auto;
+}
+#clients .container .main{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 0 auto;
+    gap: 10px;
+}
+/* #clients .container .main > div{
+    margin: 6px;
+} */
+#clients .container .main .card{
+    margin-right: 5px;
+}
+#clients .container .main .card img{
+    height: 100%;
+}
+
+
+/* ============================================================================
+                    Clients part end here
+=============================================================================*/
+
+/* ============================================================================
+                   Footer Part start here
+=============================================================================*/
+
+/* ==================================Footer Top start here============================= */
+footer .footer__top{
+    background: red;
+    margin-top: -16px !important;
+    width: 100%;
+}
+footer .footer__top i{
+    font-size: 25px;
+    padding: 16px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+}
+footer .footer__top .row a{
+    text-decoration: none;
+    color: white;
+}
+footer .footer__top .row ul{
+    max-width: 350px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 4px 0px black;
+}
+
+footer .footer__top i::before{
+    background: red;
+    position: absolute;
+    padding: 16px;
+    border-radius: 50%;
+    right: -10px;
+    bottom: 4px;
+    -webkit-box-shadow: 0px 10px 18px 0px rgb(0 0 0 / 48%);
+    -moz-box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.48);
+    box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 48%);
+}
+/* ==================================Footer Top end here============================= */
+
+/* ==================================Footer Bottom start here============================= */
+footer .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .main a{
+    border: 2px solid white !important;
+    color: white !important;
+    transition: ease-in-out .5s;
+    font-weight: 500;
+}
+footer .main a:hover{
+    border: 2px solid red !important;
+    cursor: pointer;
+    color: red !important;
+    background: white;
+}
+footer #copyright{
+    text-decoration: none;
+    color: white;
+}
+
+/* ==================================Footer Bottom end here============================= */
+
+
+/* ============================================================================
+                    Footer part end here
+=============================================================================*/

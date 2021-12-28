@@ -1,0 +1,216 @@
+/* ============================================================================
+                    Global Variable start here
+=============================================================================*/
+:root{
+    --title-font: 'Roboto Slab', serif !important;
+    --body-font: 'Poppins', sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+}
+p{
+    font-family: var(--body-font) !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--title-font) !important;
+}
+ul li{
+    list-style: none !important;
+}
+/* ============================================================================
+                    Global Variable end here
+=============================================================================*/
+
+/* ============================================================================
+                    Header part end here
+=============================================================================*/
+header .container{
+    background: black !important;
+    padding: 5px 0;
+}
+header .header__left{
+    color: white !important;
+    font-family: var(--body-font);
+    font-size: 13px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+header .header__left i{
+    padding: 0px 8px;
+}
+
+header .header__right{
+    color: white !important;
+    text-align: right;
+    font-family: var(--body-font);
+    font-size: 13px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+header .header__right a{
+    color: white;
+    padding: 15px;
+}
+/* ============================================================================
+                    Header part end here
+=============================================================================*/
+/* ============================================================================
+                    Nav part start here
+=============================================================================*/
+.navbar{
+    font-family: var(--body-font) !important; 
+}
+nav .container{
+    background: white !important;
+    box-shadow: 0px 3px 11px -7px black;
+    padding: 10px 0px;
+    padding-right: 5px;
+    height: 100%;
+    margin-top: -10px;
+}
+nav .container button{
+    border: 1px solid red;
+}
+nav .container button:hover{
+    border: 1px solid black;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+.navbar-toggler{
+    background: black;
+}
+.nav-link{
+    color: black !important;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+nav .container #logo{
+    width: 150px;
+    padding: 8px;
+}
+nav .container .nav-item{
+    margin-right: 10px;
+}
+
+
+/* ============================================================================
+                    Nav part end here
+=============================================================================*/
+
+/* ============================================================================
+                    Service part start here
+=============================================================================*/
+#service{
+    margin-top: 50px;
+}
+#service .container .main{
+    height: 600px;
+    display: flex;
+}
+#service .container .main .main__left{
+    width: 50%;
+    background: rgba(202, 172, 177, .888);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#service .container .main .main__left .text{
+    padding: 13px 90px;
+}
+#service .container .main .main__left .text h5{
+    margin-bottom: 10px;
+}
+#service .container .main .main__left img{
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+#service .container .main .main__right{
+    width: 50%;
+    background: url(../images/catering/services__1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* ============================================================================
+                    Service part end here
+=============================================================================*/
+
+/* ============================================================================
+                   Footer Part start here
+=============================================================================*/
+
+/* ==================================Footer Top start here============================= */
+footer{
+    margin-top: 200px;
+}
+footer .footer__top{
+    background: red;
+    margin-top: -16px !important;
+    width: 100%;
+}
+footer .footer__top i{
+    font-size: 25px;
+    padding: 16px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+}
+footer .footer__top .row a{
+    text-decoration: none;
+    color: white;
+}
+footer .footer__top .row ul{
+    max-width: 350px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 4px 0px black;
+}
+
+footer .footer__top i::before{
+    background: red;
+    position: absolute;
+    padding: 16px;
+    border-radius: 50%;
+    right: -10px;
+    bottom: 4px;
+    -webkit-box-shadow: 0px 10px 18px 0px rgb(0 0 0 / 48%);
+    -moz-box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.48);
+    box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 48%);
+}
+/* ==================================Footer Top end here============================= */
+
+/* ==================================Footer Bottom start here============================= */
+footer .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .main a{
+    border: 2px solid white !important;
+    color: white !important;
+    transition: ease-in-out .5s;
+    font-weight: 500;
+}
+footer .main a:hover{
+    border: 2px solid red !important;
+    cursor: pointer;
+    color: red !important;
+    background: white;
+}
+footer #copyright{
+    text-decoration: none;
+    color: white;
+}
+
+/* ==================================Footer Bottom end here============================= */
+
+
+/* ============================================================================
+                    Footer part end here
+=============================================================================*/
