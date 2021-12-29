@@ -27,6 +27,9 @@ ul li{
 /* ============================================================================
                     Header part end here
 =============================================================================*/
+header{
+    background: #f8f8f8 !important;
+}
 header .container{
     background: black !important;
     padding: 5px 0;
@@ -62,6 +65,7 @@ header .header__right a{
 =============================================================================*/
 .navbar{
     font-family: var(--body-font) !important; 
+    background: #f8f8f8 !important;
 }
 nav .container{
     background: white !important;
@@ -70,6 +74,7 @@ nav .container{
     padding-right: 5px;
     height: 100%;
     margin-top: -10px;
+    margin-bottom: -8px;
 }
 nav .container button{
     border: 1px solid red;
@@ -192,15 +197,15 @@ footer .main{
     justify-content: space-between;
 }
 footer .main a{
-    border: 2px solid white !important;
-    color: white !important;
+    border: 1px solid rgba(255, 255, 255, .8) !important;
+    color: rgba(255, 255, 255, .8) !important;
     transition: ease-in-out .5s;
     font-weight: 500;
 }
 footer .main a:hover{
-    border: 2px solid red !important;
+    border: 1px solid red !important;
     cursor: pointer;
-    color: red !important;
+    color: black !important;
     background: white;
 }
 footer #copyright{
