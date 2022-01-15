@@ -1,64 +1,101 @@
 /* ============================================================================
                     Global Variable start here
 =============================================================================*/
-:root{
-    --title-font: 'Roboto Slab', serif !important;
-    --body-font: 'Poppins', sans-serif !important;
+:root {
+  --title-font: "Roboto Slab", serif !important;
+  --body-font: "Poppins", sans-serif !important;
 }
-body{
-    background: rgba(255, 0, 0, .025) !important;
+body {
+  background: rgba(255, 0, 0, 0.025) !important;
 }
-h1, h2, h3, h4, h5, h6, p{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-a{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
-p{
-    font-family: var(--body-font) !important;
+p {
+  font-family: var(--body-font) !important;
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: var(--title-font) !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font) !important;
 }
-ul li{
-    list-style: none !important;
+ul li {
+  list-style: none !important;
 }
 /* ============================================================================
                     Global Variable end here
 =============================================================================*/
 
 /* ============================================================================
+                    Header Dropdown Hover start here
+=============================================================================*/
+@media all and (min-width: 992px) {
+  .dropdown-item {
+    padding: 0.4rem 1rem !important;
+    border-bottom: 1px solid black !important;
+    font-weight: 500 !important;
+  }
+  .dropdown-menu {
+    padding: 0rem 0 !important;
+  }
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+    margin-top: 0;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+    font-weight: 700;
+  }
+  .navbar .nav-item:hover .dropdown-menu .dropdown-item:hover {
+    background: red;
+    color: white;
+  }
+}
+/* ============================================================================
+                  Header Dropdown Hover end here
+=============================================================================*/
+
+/* ============================================================================
                     Header part end here
 =============================================================================*/
-header{
-    background: #f8f8f8 !important;
+header .container {
+  background: black !important;
+  padding: 5px 0;
 }
-header .container{
-    background: black !important;
-    padding: 5px 0;
+header .header__left {
+  color: white !important;
+  font-family: var(--body-font);
+  font-size: 13px;
+  margin-top: 2px;
+  font-weight: 500;
 }
-header .header__left{
-    color: white !important;
-    font-family: var(--body-font);
-    font-size: 13px;
-    margin-top: 2px;
-    font-weight: 500;
-}
-header .header__left i{
-    padding: 0px 8px;
+header .header__left i {
+  padding: 0px 8px;
 }
 
-header .header__right{
-    color: white !important;
-    text-align: right;
-    font-family: var(--body-font);
-    font-size: 13px;
-    margin-top: 2px;
-    font-weight: 500;
+header .header__right {
+  color: white !important;
+  text-align: right;
+  font-family: var(--body-font);
+  font-size: 13px;
+  margin-top: 2px;
+  font-weight: 500;
 }
-header .header__right a{
-    color: white;
-    padding: 15px;
+header .header__right a {
+  color: white;
+  padding: 15px;
 }
 /* ============================================================================
                     Header part end here
@@ -66,45 +103,46 @@ header .header__right a{
 /* ============================================================================
                     Nav part start here
 =============================================================================*/
-.navbar{
-    background: #f8f8f8 !important;
-    font-family: var(--body-font) !important; 
+.navbar {
+  font-family: var(--body-font) !important;
+  font-weight: 700;
+  font-size: 17px;
 }
-nav .container{
-    background: white !important;
-    box-shadow: 0px 3px 11px -7px black;
-    padding: 10px 0px;
-    padding-right: 5px;
-    height: 100%;
-    margin-bottom: -8px;
-    margin-top: -10px;
+nav .container {
+  background: white !important;
+  box-shadow: 0px 3px 11px -7px black;
+  padding: 10px 0px;
+  padding-right: 5px;
+  height: 100%;
+  margin-bottom: -8px;
+  margin-top: -10px;
 }
-nav .container button{
-    border: 1px solid red;
+nav .container button {
+  border: 1px solid red;
+  font-weight: 700;
 }
-nav .container button:hover{
-    border: 1px solid black;
-    cursor: pointer;
-    background: black;
-    color: white;
+nav .container button:hover {
+  border: 1px solid black;
+  cursor: pointer;
+  background: black;
+  color: white;
 }
-.navbar-toggler{
-    background: black;
+.navbar-toggler {
+  background: black;
 }
-.nav-link{
-    color: black !important;
+.nav-link {
+  color: black !important;
 }
-.dropdown-toggle::after{
-    display: none !important;
+.dropdown-toggle::after {
+  display: none !important;
 }
-nav .container #logo{
-    width: 150px;
-    padding: 8px;
+nav .container #logo {
+  width: 150px;
+  padding: 8px;
 }
-nav .container .nav-item{
-    margin-right: 10px;
+nav .container .nav-item {
+  margin-right: 10px;
 }
-
 
 /* ============================================================================
                     Nav part end here
@@ -113,119 +151,119 @@ nav .container .nav-item{
 /* ============================================================================
                     Body part start here
 =============================================================================*/
-#management{
-    margin-top: 50px;
+#management {
+  margin-top: 50px;
 }
-#management .item .card img{
-    width: 100%;
-    max-height: 350px;
+#management .item .card {
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
 }
-#management .text{
-    text-align: center;
+#management .item .card img {
+  width: 100%;
+  max-height: 350px;
 }
-#management .text p{
-    max-width: 1000px;
-    margin: 0 auto;
+#management .text {
+  text-align: center;
 }
-#management .row{
-    gap: 20px 0px;
+#management .text p {
+  max-width: 1000px;
+  margin: 0 auto;
 }
-#management .card .list-group i{
-    font-size: 15px;
-    margin-right: 7px;
+#management .row {
+  gap: 20px 0px;
 }
-#management .card .card-link i{
-    font-size: 25px;
-    color: white;
-    width: 50px;
-    height: 50px;
-    background: black;
-    border-radius: 50%;
-    line-height: 50px;
-    align-items: center;
-    text-align: center;
-    transition: all ease-in .4s;
+#management .card .list-group i {
+  font-size: 15px;
+  margin-right: 7px;
 }
-#management .card .card-link i:hover{
-    cursor: pointer;
-    background-color: red;
+#management .card .card-link i {
+  font-size: 25px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50%;
+  line-height: 50px;
+  align-items: center;
+  text-align: center;
+  transition: all ease-in 0.4s;
+}
+#management .card .card-link i:hover {
+  cursor: pointer;
+  background-color: red;
 }
 
 /* ============================================================================
                     Body part end here
 =============================================================================*/
 
-
-
 /* ============================================================================
                    Footer Part start here
 =============================================================================*/
 
 /* ==================================Footer Top start here============================= */
-footer{
-    margin-top: 100px;
+footer {
+  margin-top: 100px;
 }
-footer .footer__top{
-    background: red;
-    margin-top: -16px !important;
-    width: 100%;
+footer .footer__top {
+  background: red;
+  margin-top: -16px !important;
+  width: 100%;
 }
-footer .footer__top i{
-    font-size: 25px;
-    padding: 16px;
-    color: white;
-    background-color: red;
-    border-radius: 50%;
-    position: relative;
+footer .footer__top i {
+  font-size: 25px;
+  padding: 16px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
 }
-footer .footer__top .row a{
-    text-decoration: none;
-    color: white;
+footer .footer__top .row a {
+  text-decoration: none;
+  color: white;
 }
-footer .footer__top .row ul{
-    max-width: 350px;
-    margin: 0 auto;
-    box-shadow: 0px 5px 4px 0px black;
+footer .footer__top .row ul {
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 4px 0px black;
 }
 
-footer .footer__top i::before{
-    background: red;
-    position: absolute;
-    padding: 16px;
-    border-radius: 50%;
-    right: -10px;
-    bottom: 4px;
-    -webkit-box-shadow: 0px 10px 18px 0px rgb(0 0 0 / 48%);
-    -moz-box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.48);
-    box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 48%);
+footer .footer__top i::before {
+  background: red;
+  position: absolute;
+  padding: 16px;
+  border-radius: 50%;
+  right: -10px;
+  bottom: 4px;
+  -webkit-box-shadow: 0px 10px 18px 0px rgb(0 0 0 / 48%);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 48%);
 }
 /* ==================================Footer Top end here============================= */
 
 /* ==================================Footer Bottom start here============================= */
-footer .main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+footer .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-footer .main a{
-    border: 1px solid rgba(255, 255, 255, .8) !important;
-    color: rgba(255, 255, 255, .8) !important;
-    transition: ease-in-out .5s;
-    font-weight: 500;
+footer .main a {
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: ease-in-out 0.5s;
+  font-weight: 500;
 }
-footer .main a:hover{
-    border: 1px solid red !important;
-    cursor: pointer;
-    color: black !important;
-    background: white;
+footer .main a:hover {
+  border: 1px solid red !important;
+  cursor: pointer;
+  color: black !important;
+  background: white;
 }
-footer #copyright{
-    text-decoration: none;
-    color: white;
+footer #copyright {
+  text-decoration: none;
+  color: white;
 }
 
 /* ==================================Footer Bottom end here============================= */
-
 
 /* ============================================================================
                     Footer part end here

@@ -178,37 +178,38 @@
             </div>
         </div>
         <div class="contactForm">
-            <form>
+            <form class="formValue">
                 <h2>Send Message</h2>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input class="names" type="text" name="" required="required">
                     <span>Full Name</span>
+                  <div class="err1">Please enter your Name</div>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input class="email" type="email" name="email" required="required"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                     <span>Email</span>
+                  <div class="err2">Please Enter a Valid Email</div>
                 </div>
                 <div class="inputBox">
-                    <textarea required="required"></textarea>
+                    <textarea class="texts" required="required"></textarea>
                     <span>Type your Message</span>
+                  <div class="err3">Please type your Messages</div>
                 </div>
                 <div class="inputBox">
-                    <input id="myBtn" type="submit" name="" value="Send">
-                    <p id="demo"></p>
+                  <button type="button" class="mybtn">Submit</button>
                 </div>
-            </form>
+              </form>
+              <div class="messages">
+              <i class="fas fa-check"></i>
+              <h2>Your Messages sent Successfully</h2>
+            </div>
         </div>
     </div>
     </div>
 </section>
 
-<script>
-    document.getElementById("myBtn").addEventListener("click", displayDate);
-    
-    function displayDate() {
-      document.getElementById("demo").innerHTML = Date();
-    }
-</script>
+
 <!-- =================================================================================================
                                     Contact Form end here
 ====================================================================================================-->
@@ -332,5 +333,6 @@
 ====================================================================================================-->
   
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/contacts.js"></script>
 </body>
 </html>
