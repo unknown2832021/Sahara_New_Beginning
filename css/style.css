@@ -4,7 +4,7 @@
 :root {
   --title-font: "Roboto Slab", serif !important;
   --body-font: "Poppins", sans-serif !important;
-  --body-background: lightgray !important;
+  --body-background: hsl(0, 0%, 95%) !important;
 }
 h1,
 h2,
@@ -212,8 +212,8 @@ marquee a {
                     Demo Services part start here
 =============================================================================*/
 #demoServices .container {
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-top: 160px;
+  margin-bottom: 70px;
 }
 #demoServices .container .main {
   display: inline-flex;
@@ -237,6 +237,7 @@ marquee a {
   color: white !important;
   cursor: pointer;
   border-top: 4px solid black !important;
+  transform: translateY(-10%);
 }
 #demoServices .container .card .card-body {
   padding: 22px;
@@ -303,21 +304,68 @@ marquee a {
                     Offering part start here
 =============================================================================*/
 
+/* ==========================Offer Top auto typing start here========================== */
 #offer {
   margin-top: 50px;
   background: #f8f8f8ab !important ;
   padding-bottom: 100px;
 }
+.desigining {
+  display: flex;
+  align-items: center;
+  padding: 25px 0px;
+}
+.desigining p {  
+font-size: 2rem;
+padding: 0.5rem;
+font-weight: bold;
+letter-spacing: 0.1rem;
+text-align: center;
+overflow: hidden;
+}
+.desigining p span.typed-text { 
+font-weight: 600;
+color: red;
+}
+.desigining p span.cursor { 
+display: inline-block;
+background-color: black;
+margin-left: 0.1rem;
+width: 3px;
+animation: blink 1s infinite;
+}
+.desigining p span.cursor.typing { 
+animation: none;
+}
+@keyframes blink { 
+0% {
+background-color: black;
+} 
+49% {     
+background-color: black;
+}
+50% {    
+background-color: transparent;
+}
+99% {     
+background-color: transparent;
+}
+100% {    
+background-color: black;
+}
+}
+/* ==========================Offer Top auto typing end here========================== */
 
 /* ==========================Offer__left start here========================== */
 #offer .container .top {
-  padding: 100px 0px;
+  padding-bottom: 30px ;
 }
 #offer .container .top__left h2 {
   font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 700;
-  width: 360px;
+  width: 450px;
+  padding: 27px 0px;
 }
 #offer .container .top__right .details {
   color: #555;
@@ -332,7 +380,7 @@ marquee a {
 /* ==========================Offer__right start here========================== */
 
 #offer .bottom .item {
-  background: lightgray;
+  background: rgba(211, 211, 211, .6);
   text-align: center;
   margin-bottom: 25px;
   padding: 50px 0px;
@@ -433,7 +481,9 @@ marquee a {
 =============================================================================*/
 
 /* ==========================content__left start here========================== */
-
+#business{
+  padding-top: 100px;
+}
 #business .container .content__left img {
   width: 100%;
 }

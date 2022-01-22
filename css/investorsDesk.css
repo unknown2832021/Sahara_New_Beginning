@@ -226,7 +226,7 @@ nav .container .nav-item {
 
 /* ==========================Accordion start here========================== */
 #faq .container .row {
-  background: lightgray;
+  background: hsl(0, 0%, 95%);
   padding-top: 70px;
   padding-bottom: 70px;
 }

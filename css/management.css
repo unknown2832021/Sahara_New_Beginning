@@ -5,9 +5,6 @@
   --title-font: "Roboto Slab", serif !important;
   --body-font: "Poppins", sans-serif !important;
 }
-body {
-  background: rgba(255, 0, 0, 0.025) !important;
-}
 h1,
 h2,
 h3,
@@ -154,12 +151,33 @@ nav .container .nav-item {
 #management {
   margin-top: 50px;
 }
+#management .text{
+  margin-bottom: 30px;
+}
+#management .card{
+  position: relative;
+  margin-bottom: 30px;
+}
 #management .item .card {
-  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.30);
+  height: 100%;
+  
 }
 #management .item .card img {
   width: 100%;
   max-height: 350px;
+}
+#management .item .card .design{
+  position: absolute;
+  background: black;
+  width: 100%;
+  bottom: -220px;
+  transition: all ease-in-out .5s;
+}
+#management .item .card:hover .design{
+  display: block;
+  cursor: pointer;
+  bottom: 0;
 }
 #management .text {
   text-align: center;
@@ -171,30 +189,44 @@ nav .container .nav-item {
 #management .row {
   gap: 20px 0px;
 }
+#management .card .list-group-item{
+  background: black;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: 700;
+}
 #management .card .list-group i {
   font-size: 15px;
   margin-right: 7px;
 }
 #management .card .card-link i {
-  font-size: 25px;
-  color: white;
-  width: 50px;
-  height: 50px;
-  background: black;
+  font-size: 20px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  background: white;
   border-radius: 50%;
-  line-height: 50px;
+  line-height: 40px;
   align-items: center;
   text-align: center;
   transition: all ease-in 0.4s;
+  margin-right: 22px;
 }
 #management .card .card-link i:hover {
   cursor: pointer;
   background-color: red;
+  color: white;
 }
 
 /* ============================================================================
                     Body part end here
 =============================================================================*/
+#nothing .container{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background: white;
+}
 
 /* ============================================================================
                    Footer Part start here
