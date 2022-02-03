@@ -1,3 +1,109 @@
+// ===================== Body Slider Start here ====================
+
+let slides      = document.querySelectorAll('.image');
+let slidesArray = Array.from(slides);
+
+
+//====== Declaring positioning for the slides ======
+function prevnext(){
+    let currentSlide = document.querySelector('.image.active');
+    let currentSlideIndex = slidesArray.indexOf(currentSlide);
+
+    let prev;
+    let next;
+
+    if(currentSlideIndex == 0){
+        prev = slidesArray[slidesArray.length - 1]
+    } else{
+        prev = slidesArray[currentSlideIndex - 1]
+    }
+
+    if(currentSlide == slidesArray[slidesArray.length - 1]){
+        next = slidesArray[0]
+    } else{
+        next = slidesArray[currentSlideIndex + 1]
+    }
+    return { prev, next };
+}
+// ====== Sliding function for arranging the slides position ======
+function sliding(){
+    let currentSlide = document.querySelector('.image.active');
+    let currentSlideIndex = slidesArray.indexOf(currentSlide);
+    let textMessage = document.querySelector('.textMessage')
+    let { prev, next } = prevnext()
+
+// ====== Text Auto play start ====== 
+    textMessage.innerHTML = currentSlide.dataset.mess
+// ====== Text Auto play end ====== 
+
+    slidesArray.map((image, index) => {
+        if(currentSlideIndex == index){
+            image.style.transform = 'translateX(0)'
+        } else if(image == prev){
+            image.style.transform = 'translateX(-100%)'
+        } else if(image == next){
+            image.style.transform = 'translateX(100%)'
+        }
+        image.addEventListener('transitionend', function(){
+            image.classList.remove('smooth')
+        })
+    })
+}
+sliding()
+// ====== Button start here =====
+let prevButton = document.querySelector('.prev');
+let nextButton = document.querySelector('.next');
+
+prevButton.addEventListener('click', function(){
+    let currentSlide = document.querySelector('.image.active');
+    let { prev } =  prevnext();
+
+    clearInterval(stop);
+
+    currentSlide.classList.add('smooth')
+    prev.classList.add('smooth')
+    currentSlide.classList.remove('active')
+    currentSlide.style.transform = 'translateX(100%)'
+    prev.classList.add('active')
+    prev.style.transform = 'translateX(0)'
+    sliding()
+})
+
+nextButton.addEventListener('click', function(){
+    let currentSlide = document.querySelector('.image.active');
+    let { next } =  prevnext();
+
+    clearInterval(stop);
+
+    currentSlide.classList.add('smooth')
+    next.classList.add('smooth')
+    currentSlide.classList.remove('active')
+    currentSlide.style.transform = 'translateX(-100%)'
+    next.classList.add('active')
+    next.style.transform = 'translateX(0)'
+    sliding()
+})
+// ====== Button end here =====
+// ====== Auto play start here =====
+function autoPlay(){
+    let currentSlide = document.querySelector('.image.active');
+    let { next } =  prevnext();
+
+    currentSlide.classList.add('smooth')
+    next.classList.add('smooth')
+    currentSlide.classList.remove('active')
+    currentSlide.style.transform = 'translateX(-100%)'
+    next.classList.add('active')
+    next.style.transform = 'translateX(0)'
+    sliding()
+}
+let stop = setInterval(function(){
+    autoPlay()
+}, 4000)
+// ====== Auto play end here =====
+
+// ===================== Body Slider end here ====================
+
 // ====================== Counter Part start here ==================
 let counting    = document.querySelectorAll('.counting');
 let arr         = Array.from(counting);
