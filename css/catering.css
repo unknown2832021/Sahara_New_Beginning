@@ -149,13 +149,18 @@ nav .container .nav-item {
 =============================================================================*/
 #service {
   margin-top: 50px;
+  margin-bottom: 80px;
+}
+#service .row>* {
+  padding-right: calc(var(--bs-gutter-x) * .0);
+  padding-left: calc(var(--bs-gutter-x) * .0);
 }
 #service .container .main {
-  height: 600px;
+  height: 500px;
   display: flex;
 }
 #service .container .main .main__left {
-  width: 50%;
+  width: 40%;
   background: rgba(202, 172, 177, 0.888);
   display: flex;
   flex-direction: column;
@@ -174,22 +179,153 @@ nav .container .nav-item {
   margin-bottom: 20px;
 }
 #service .container .main .main__right {
-  width: 50%;
-  background: url(../images/catering/services__1.jpg) no-repeat center;
-  background-size: cover;
+  width: 60%;
 }
-
+/* Catering Slider start here */
+.main__right .catSlider{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.catSlider .slide{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(100%);
+}
+.catSlider .active{
+  transform: translateX(0);
+}
+.catSlider img{
+  height: 100%;
+  width: 100%;
+}
+.smooth{
+  transition: all ease-in-out .5s;
+}
 /* ============================================================================
                     Service part end here
 =============================================================================*/
+#description .row>* {
+  padding-right: calc(var(--bs-gutter-x) * .0);
+  padding-left: calc(var(--bs-gutter-x) * .0);
+}
+#description .extra{
+  width: 100%;
+  height: 250px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#description .first{
+  background: black;
 
+}
+.text h5{
+  line-height: 1.6;
+  font-family: var(--title-font);
+}
+.text a{
+  color: white;
+  border: 1px solid white;
+  padding: 5px 15px;
+  margin-top: 5px;
+  transition: all ease-in-out .6s;
+}
+.text a:hover{
+  color: white;
+  background: rgba(255, 255, 255, .5);
+  font-weight: 600;
+}
+#description .second{
+  background: rgba(255, 0, 0, .6);
+  color: black;
+}
+#description .image{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+.image .overlay{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .35);
+  transform: translateY(-100%);
+  position: absolute;
+  transition: all ease-in-out .4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+.image:hover .overlay{
+  transform: translateY(0);
+  cursor: pointer;
+}
+#description .topone:after{
+  top: calc(50% - 13px);
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  border-width: 13px;
+  z-index: 99;
+  left: 0;
+  border-left-color: black;
+}
+#description .toptwo:after{
+  top: calc(50% - 13px);
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  border-width: 13px;
+  z-index: 99;
+  left: 0;
+  border-left-color: rgba(255, 0, 0, .6);
+}
+#description .downone:after{
+  top: calc(50% - 13px);
+  border: solid transparent;  
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  border-width: 13px;
+  z-index: 99;
+  right: 0;
+  border-right-color: black;
+}
+#description .downtwo:after{
+  top: calc(50% - 13px);
+  border: solid transparent;  
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  border-width: 13px;
+  z-index: 99;
+  right: 0;
+  border-right-color: rgba(255, 0, 0, .6);
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
 /* ============================================================================
                    Footer Part start here
 =============================================================================*/
 
 /* ==================================Footer Top start here============================= */
 footer {
-  margin-top: 200px;
+  margin-top: 80px;
 }
 footer .footer__top {
   background: red;
