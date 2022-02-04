@@ -1,0 +1,73 @@
+@media (min-width: 320px) and (max-width: 575px) {
+  .navbar {
+    font-size: 14px !important;
+    text-align: center;
+  }
+  .navbar .dropdown-item {
+    text-align: center;
+  }
+  #slider .container {
+    max-height: 230px !important;
+  }
+  .slider {
+    height: 325px !important;
+  }
+  .prev {
+    top: 125px !important;
+  }
+  .next {
+    top: 125px !important;
+  }
+  .text h5 {
+    font-size: 18px;
+  }
+  .text .textMessage {
+    font-size: 14px !important;
+    height: 24px;
+  }
+  #demoServices .container .main {
+    justify-content: center;
+  }
+  #counter .item h1 {
+    font-size: 45px !important;
+  }
+  #counter .item p {
+    font-size: 14px !important;
+  }
+  #counter .overlay {
+    padding: 30px !important;
+  }
+  .desigining {
+    padding: 0 !important;
+  }
+  .desigining p {
+    font-size: 1rem !important;
+    padding: 0 !important;
+  }
+  #offer .container .top__left h2 {
+    font-size: 25px !important;
+    padding: 0 !important;
+  }
+  #offer .container .top__right .offerDetail {
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    padding: 15px 0px !important;
+    border-left: 0 !important;
+    padding-left: 40px;
+  }
+  #offer {
+    padding-bottom: 0 !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 20px !important;
+  }
+  #services .container .main .main__top #text p {
+    font-size: 14px !important;
+  }
+}

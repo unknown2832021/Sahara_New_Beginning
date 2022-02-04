@@ -4,3 +4,5 @@
 992-1199 -- large device.		--col-lg
 1200-1399 --extra large device.	--col-xl
 1400-2000.. --extra extra large device.	--col-xxl
+
+@media (min-width:320px) and (max-width:575px){}

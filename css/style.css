@@ -178,8 +178,8 @@ marquee a {
 =============================================================================*/
 #slider .container {
   width: 100%;
-  height: 550px;
-  background: url(../images/body__background.jpg) no-repeat center;
+  max-height: 550px;
+  background: url(../images/sliders/sliderBackground.jpg) no-repeat center;
   background-size: cover;
 }
 .slider {
@@ -188,25 +188,26 @@ marquee a {
   height: 626px;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
-.slider .text{
+.slider .text {
   position: absolute;
   bottom: 0;
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, 0.7);
   width: 100%;
   height: auto;
   z-index: 5;
   align-items: center;
   line-height: 1;
 }
-.text h5{
+.text h5 {
   font-family: var(--title-font);
   text-transform: uppercase;
   text-align: center;
   margin-top: 10px;
   font-weight: 700;
 }
-.text .textMessage{
+.text .textMessage {
   font-family: var(--body-font);
   text-align: center;
   font-size: 18px;
@@ -218,14 +219,14 @@ marquee a {
   position: absolute;
   transform: translateX(100%);
 }
-.slider .active{
+.slider .active {
   transform: translateX(0);
 }
 .image img {
   width: 100%;
   height: 100%;
 }
-.prev{
+.prev {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -235,14 +236,14 @@ marquee a {
   left: 0;
   top: 250px;
   margin-left: 20px;
-  background: rgba(255, 255, 255, .45);
-  transition: .5s all ease-in-out;
+  background: rgba(255, 255, 255, 0.45);
+  transition: 0.5s all ease-in-out;
 }
-.prev:hover{
+.prev:hover {
   cursor: pointer;
   background: white;
 }
-.next{
+.next {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -252,15 +253,15 @@ marquee a {
   top: 250px;
   right: 0;
   margin-right: 20px;
-  background: rgba(255, 255, 255, .45);
-  transition: .5s all ease-in-out;
+  background: rgba(255, 255, 255, 0.45);
+  transition: 0.5s all ease-in-out;
 }
-.next:hover{
+.next:hover {
   cursor: pointer;
   background: white;
 }
-.smooth{
-  transition: .5s all ease-in-out;
+.smooth {
+  transition: 0.5s all ease-in-out;
 }
 /* ============================================================================
                     Body Slider end here
@@ -373,50 +374,50 @@ marquee a {
   align-items: center;
   padding: 25px 0px;
 }
-.desigining p {  
-font-size: 2rem;
-padding: 0.5rem;
-font-weight: bold;
-letter-spacing: 0.1rem;
-text-align: center;
-overflow: hidden;
+.desigining p {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
 }
-.desigining p span.typed-text { 
-font-weight: 600;
-color: red;
+.desigining p span.typed-text {
+  font-weight: 600;
+  color: red;
 }
-.desigining p span.cursor { 
-display: inline-block;
-background-color: black;
-margin-left: 0.1rem;
-width: 3px;
-animation: blink 1s infinite;
+.desigining p span.cursor {
+  display: inline-block;
+  background-color: black;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
 }
-.desigining p span.cursor.typing { 
-animation: none;
+.desigining p span.cursor.typing {
+  animation: none;
 }
-@keyframes blink { 
-0% {
-background-color: black;
-} 
-49% {     
-background-color: black;
-}
-50% {    
-background-color: transparent;
-}
-99% {     
-background-color: transparent;
-}
-100% {    
-background-color: black;
-}
+@keyframes blink {
+  0% {
+    background-color: black;
+  }
+  49% {
+    background-color: black;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: black;
+  }
 }
 /* ==========================Offer Top auto typing end here========================== */
 
 /* ==========================Offer__left start here========================== */
 #offer .container .top {
-  padding-bottom: 30px ;
+  padding-bottom: 30px;
 }
 #offer .container .top__left h2 {
   font-family: "Poppins", sans-serif;
@@ -438,7 +439,7 @@ background-color: black;
 /* ==========================Offer__right start here========================== */
 
 #offer .bottom .item {
-  background: rgba(211, 211, 211, .6);
+  background: rgba(211, 211, 211, 0.6);
   text-align: center;
   margin-bottom: 25px;
   padding: 50px 0px;
@@ -539,7 +540,7 @@ background-color: black;
 =============================================================================*/
 
 /* ==========================content__left start here========================== */
-#business{
+#business {
   padding-top: 100px;
 }
 #business .container .content__left img {
@@ -772,13 +773,13 @@ background-color: black;
   margin-top: 20px;
 }
 /* ==========================Client Bottom start here========================== */
-#client .box{
+#client .box {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   align-items: center;
   height: 350px;
-  background: rgba(255, 0, 0, .1);
+  background: rgba(255, 0, 0, 0.1);
   overflow: hidden;
 }
 #client .details {
@@ -788,11 +789,11 @@ background-color: black;
   height: 250px;
   width: 90%;
   transform: scale(1);
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
   overflow: hidden;
   margin-left: 20px;
 }
-#client .details:hover{
+#client .details:hover {
   cursor: pointer;
   transform: scale(1.1);
   background: white;
