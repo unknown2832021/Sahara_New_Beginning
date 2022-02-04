@@ -59,15 +59,135 @@
   #offer {
     padding-bottom: 0 !important;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 20px !important;
+  #services .container .main .main__top #text p {
+    font-size: 14px !important;
+  }
+  #services .container .main .main__top #text {
+    text-align: center !important;
+  }
+  #business .container .content__right h2 {
+    font-size: 30px !important;
+  }
+  #business .container .content__right a {
+    margin-top: 10px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar {
+    font-size: 14px !important;
+    text-align: center;
+  }
+  .navbar .dropdown-item {
+    text-align: center;
+  }
+  #slider .container {
+    max-height: 230px !important;
+  }
+  .slider {
+    height: 325px !important;
+  }
+  .prev {
+    top: 125px !important;
+  }
+  .next {
+    top: 125px !important;
+  }
+  .text h5 {
+    font-size: 18px;
+  }
+  .text .textMessage {
+    font-size: 14px !important;
+    height: 24px;
+  }
+  #demoServices .container .main {
+    justify-content: center;
+  }
+  #counter .item h1 {
+    font-size: 45px !important;
+  }
+  #counter .item p {
+    font-size: 14px !important;
+  }
+  #counter .overlay {
+    padding: 30px !important;
+  }
+  .desigining {
+    padding: 0 !important;
+  }
+  .desigining p {
+    font-size: 1rem !important;
+    padding: 0 !important;
+  }
+  #offer .container .top__left h2 {
+    font-size: 25px !important;
+    padding: 0 !important;
+  }
+  #offer .container .top__right .offerDetail {
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    padding: 15px 0px !important;
+    border-left: 0 !important;
+    padding-left: 40px;
+  }
+  #offer {
+    padding-bottom: 0 !important;
   }
   #services .container .main .main__top #text p {
     font-size: 14px !important;
+  }
+  #services .container .main .main__top #text {
+    text-align: center !important;
+  }
+  #business .container .content__right h2 {
+    font-size: 30px !important;
+  }
+  #business .container .content__right a {
+    margin-top: 10px !important;
+  }
+}
+
+/* @media (min-width:768px) and (max-width:991px){} */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .slider .text {
+    height: 76px !important;
+    padding-top: 5px !important;
+  }
+  #demoServices .container .main {
+    justify-content: center;
+  }
+  #demoServices .container .card {
+    margin-right: 30px !important;
+    margin-bottom: 40px !important;
+  }
+  #offer .container .top__left h2 {
+    font-size: 35px !important;
+    padding: 55px 0px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .slider .text {
+    height: 76px !important;
+    padding-top: 5px !important;
+  }
+  #demoServices .container .main {
+    justify-content: center;
+  }
+  #demoServices .container .card {
+    margin-right: 30px !important;
+    margin-bottom: 40px !important;
+  }
+  #business .container .content__right a {
+    margin-top: 25px !important;
+  }
+
+  /* Investors Desk */
+  #faq .container .content__right h2 {
+    font-size: 30px !important;
+  }
+  #faq .container .content__left h2 {
+    font-size: 30px !important;
   }
 }
