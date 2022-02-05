@@ -153,6 +153,7 @@ nav .container .nav-item {
   margin-bottom: 20px;
 }
 .heading {
+  margin-top: 30px;
   font-family: var(--body-font);
   font-size: 2rem;
   font-weight: 700;
@@ -164,6 +165,7 @@ nav .container .nav-item {
   display: block;
 }
 .gallery {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;

@@ -195,7 +195,7 @@ marquee a {
   bottom: 0;
   background: rgba(255, 255, 255, 0.7);
   width: 100%;
-  height: auto;
+  height: 76px;
   z-index: 5;
   align-items: center;
   line-height: 1;
@@ -206,6 +206,7 @@ marquee a {
   text-align: center;
   margin-top: 10px;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 .text .textMessage {
   font-family: var(--body-font);

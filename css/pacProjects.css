@@ -198,6 +198,138 @@ nav .container .nav-item {
   }
 }
 /* ==========================PAC projects Top auto typing end here========================== */
+/* ============================================================================
+                      Slider part start here
+  =============================================================================*/
+#slider {
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 1);
+  margin-bottom: 50px;
+}
+/* ====================Text start here================== */
+.text {
+  width: 300px;
+  height: 100%;
+  background: black;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+.counting {
+  font-family: var(--body-font);
+  margin-top: 10px;
+  padding-left: 5px;
+  text-align: center;
+  padding-top: 25px;
+}
+.counting p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.counting .founderDes {
+  font-size: 16px;
+}
+.message {
+  text-transform: uppercase;
+}
+.textDetails {
+  font-family: var(--body-font);
+  text-align: center;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  width: 300px;
+  margin: 0 auto;
+  line-height: 1.3;
+  top: 310px;
+  height: auto;
+}
+.textDetails h2 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  margin-top: 10px;
+}
+.textDetails p {
+  padding: 15px 7px;
+}
+.textDetails .textTitle {
+  font-size: 25px;
+  margin-top: 30px;
+}
+/* ==============Arrows start here==================== */
+.arrows {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.prev {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-size: 30px;
+  transition: 0.5s ease-in-out;
+}
+.prev:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+}
+.next {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-size: 30px;
+  transition: 0.5s ease-in-out;
+}
+.next:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+}
+/* ===============================================================================
+            Image part start here
+  =================================================================================*/
+.images {
+  width: 65%;
+  height: 550px;
+  position: absolute;
+  overflow-x: hidden;
+  margin-left: 240px;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(100%);
+}
+.activex {
+  transform: translateX(0);
+  box-shadow: 0px 0px 25px 10px rgb(42, 162, 199);
+}
+.image img {
+  height: 100%;
+  width: 100%;
+}
+.smooth {
+  transition: 0.5s ease-in-out;
+}
+/* ===============================================================================
+            Image part end here
+  =================================================================================*/
+
+/* ============================================================================
+                      Slider part end here
+  =============================================================================*/
 #pacProjects .container {
   width: 100%;
   margin: 0 auto;
