@@ -327,7 +327,7 @@ marquee a {
                     Counter part start here
 =============================================================================*/
 #counter {
-  background: url(../images/sliders/loginbg.jpg) no-repeat center;
+  background: url(../images/sliders/loginbg.jpg) no-repeat center fixed;
   background-size: cover;
 }
 #counter .overlay {
