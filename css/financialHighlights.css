@@ -1,533 +1,332 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-    background-color: rgba(245, 245, 245, 0.836);
-    font-family: 'Poppins', sans-serif;   
-    }
-*   {
-    box-sizing: border-box;
-    list-style: none;
-    margin: 0;
-    padding: 0;   
-    }
-                /* NavBar */
-nav{
-    background: white;
-    height: 130px;
-    position: sticky;
-    top: 0;
-    z-index: 100;  
-    width: 100%;
-    }
-                /* Logo image */
-nav img{
-    left: 10%;
-    position: absolute;
-    top: 20px;
-    width: 165px;
-    z-index: 1;
-    }
-                /* Top__nav */
-nav #top__nav{
-            float: right;
-            margin-right: 8em;
-    }
-nav #top__nav li{
-            display: inline-block;
-            line-height: 45px;
-    }       
-nav #top__nav li a{
-            color: black;
-            font-size: 15px;
-            font-weight: bold;
-            padding: 5px 0;
-            margin: 0 10px;
-            position: relative;
-            text-decoration: none;
-    }           
-nav #top__nav li a:before{
-    background: red;
-    bottom: 0;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform-origin: right;
-    transform: scale(0);
-    transition: transform .4s linear;
-    width: 100%;
-    }
-nav #top__nav li a:hover:before{
-    transform: scaleX(1);
-    transform-origin: left;
-    }
-                    /* Lower NavBar */
-nav #new{
-    float: right;
-    margin-right: -17.5em;
-    }
-nav #new li{
-    display: inline-block;
-    line-height: 130px;
-    margin: 0 20px;
-    }
-nav #new li a{
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 5px 0;
-    position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
-    }
-nav #new li a:before{
-    background: red;
-    bottom: 0;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform-origin: right;
-    transform: scale(0);
-    transition: transform .4s linear;
-    width: 100%;
-    }
-nav #new li a:hover:before{
-    transform: scaleX(1);
-    transform-origin: left;
-    }
-                /* navbar smaller screen icon controller */
-label #btn,
-label #cancel{
-    color: black;
-    cursor: pointer;
-    display: none;
-    float: right;
-    font-size: 30px;
-    line-height: 110px;
-    margin-right: 40px;
-    }
-#check{
-    display: none;
-    }
-@media (max-width: 1350px){
-    label #btn {
-        display: block;
-    }
-    #main{
-        width: 1000px;
-        height: 550px;
-    }
-    #new{
-        background: rgba(255, 255, 255, 0.795);
-        left: -100%;
-        position: fixed;
-        text-align: center;
-        top: 6.9em;
-        transition: all .8s ease;
-        width: 100%;
-        z-index: 5;
-    }
-    nav #new li{
-        display: block;
-        margin: 50px 0;
-        line-height: 17px;
-    }
-    }
-    nav #new li a{
-        font-size: 15px;
-    }
-#check:checked ~ #new{
-    left: 0;
-    }
-#check:checked ~ label #btn{
-    display: none;
-    }
-#check:checked ~ label #cancel{
-    display: block;
-    }    
-@media(max-width: 1100px){
-    #main{
-        width: 700px;
-        height: 350px;
-    }
-   .container__demo{
-       max-width: auto;
-   } 
+/* ============================================================================
+                    Global Variable start here
+=============================================================================*/
+:root {
+  --title-font: "Roboto Slab", serif !important;
+  --body-font: "Poppins", sans-serif !important;
 }
-@media(max-width:700px) {
-        nav img{
-            left: 4%;
-            position: absolute;
-            top: 40px;
-            width: 165px;
-            z-index: 1;
-        }
-        #main{
-            width: 500px;
-            height: 250px;
-        }        
-    }
-@media(max-width:550px){
-    #main{
-        width: 400px;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-                    /* Navbar ended here */
-                    /* Body contents are starting here */
-h1{
-    text-align: center;
-    margin-bottom: 10px;
+a {
+  text-decoration: none !important;
 }
-h1:hover{
-    color: red;
-    background-color: white;
+p {
+  font-family: var(--body-font) !important;
 }
-.finance{
-    margin: 0 auto;
-    max-width: 1600px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font) !important;
 }
-.financeText{
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 20px;
+ul li {
+  list-style: none !important;
 }
-.table1 {
-    border-collapse: collapse;
-    width: 50%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-td, th {
-    border: 1px solid black;
-    text-align: left;
-    padding: 8px;
-}
-td:hover{
-    color: white;
-    background-color: black;
-    cursor: pointer;
-}  
-tr:nth-child(even) {
-    background-color: white;
+/* ============================================================================
+                    Global Variable end here
+=============================================================================*/
+
+/* ============================================================================
+                    Header Dropdown Hover start here
+=============================================================================*/
+@media all and (min-width: 992px) {
+  .dropdown-item {
+    padding: 0.4rem 1rem !important;
+    border-bottom: 1px solid black !important;
+    font-weight: 500 !important;
   }
-#total{
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-
-                    /* Clients Profile start here */
-.clients{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    cursor: pointer;
-    background: white;
-    margin-bottom: 100px;
-}
-.clientsProfile{
-    box-shadow: 0 30px 45px black;
-    width: 430px;
-    height: 490px;  
-    padding: 50px;
-    background-color: white;
-    align-items: center;
-    margin: 20px; 
-   
-}                    
-.clientsProfile img{
-    width: 350px;
-    height: 250px;
-    box-shadow: 0 30px 45px red;
-}
-
-.clientsProfile1{
-    box-shadow: 0 30px 45px black;
-    width: 430px;
-    height: 490px; 
-    padding: 50px;
-    background-color: white;
-    align-items: center;
-    margin: 20px;   
-}                    
-.clientsProfile1 img{
-    width: 350px;
-    height: 250px;
-    box-shadow: 0 30px 45px red;   
-}
-
-.clientsProfile2{
-    box-shadow: 0 30px 45px black;
-    width: 430px;
-    height: 490px;  
-    padding: 50px;
-    background-color: white;
-    align-items: center;
-    margin: 20px;    
-}                    
-.clientsProfile2 img{
-    width: 350px;
-    height: 250px;
-    box-shadow: 0 30px 45px red;   
-}
-                    /* Financial Statements start Reports */
-.financialStatements{
-    width: 700px;
-    border-radius: 20px;
-    margin:0 auto;
-    background: white;
-    margin-bottom: 30px;
-}
-.statements h1:hover{
-    text-decoration: underline;
-    color: red;
-}
-#statements{
-    margin-top: 15px;
-}
-#statements:hover{
-    color: red;
-    cursor: pointer;
-}
-.statements{
-    display: flex;
-    align-items: center;
-    flex-direction: column;  
-}
-.statements ul li a{
-    text-decoration: none;
-    color: black;
-}
-.statements ul li a:hover{
-    background-color: black;
-    color: white;
-}
-.statements ul li i{
-    margin-right: 7px;
-}
-.statements ul li i:hover{
-    background-color: greenyellow;
-    border-radius: 50%;
-    cursor: pointer;
-}
-#statements2020:hover{
-    background-color: rgb(174, 227, 243);
-}
-#statements2019:hover{
-    background-color: rgb(205, 233, 241);
-}
-#statementsmix:hover{
-    background-color: rgb(229, 244, 248);
-    
-}
-
-                    
-
-                    /* Financial Statements end Reports */
-                    /* Clients Profile start here */
-                    /* Body contents are end here */
-                    /* Footer Start here */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-    }
-.footerContainer__top{
-    max-width: auto;
-    margin-right: 7%;
-    margin-left: 7%;
-    margin-bottom: 10px; 
-    background-color: red;  
-    }
-.footerContainer__bottom{
-    max-width: 1300px;
-    margin: auto;
-    margin-bottom: 10px;   
-    }   
-.footerIcon__bottom__icon{
-    max-width: 1300px;
-    margin: auto;
-    margin-bottom: 10px;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    }
-.footer{
-    background-color: rgb(54, 53, 53);
-    bottom: auto;
-    margin: 5px 0;
-    height: relative;
-    position: absolute;
-    width: 100%; 
-    border-bottom: ridge 5px black;   
-    }
-                    /* icons and additional design start here*/
-.footerIcon__top{
-    align-items:center;
-    display: flex;
-    flex: 1;
-    height: 120px;
-    justify-content: space-evenly;
-    }
-.footer__text{
-   margin-bottom: 100px;
-    text-align: center;
-    width: 300px;
-    height: 80px;
-    }
-.footer__text a{
-    text-decoration: none;
-    }
-.footer__text i{
-    align-content: center;
-    text-align: center;
-    font-size: 25px;
-    width:55px;
-    height: 55px;
-    color: white;
-    background-color: red;
-    border: 10px solid red;
-    border-radius: 50%;
-    }
-.footerIcon__top__icon{
-    margin-bottom: 10px;
-    align-items: center; 
-    }
-#text{
-    background-color: red;
-    color: white;
-    box-shadow: 0px 1px rgb(138, 4, 4);
-    height: 50px;
-    position: relative;
-    width: auto;
-    box-shadow: 0px 5px 4px 0px black;
-    margin-bottom: 8px;
-    }
-#plusSign{
-    width: 30px;
-    margin: 0 auto;
-    background-color: black; 
-    }
-#plusSign a{
-    color: white;
-    }
-#plusSign abbr, acronym{
-    cursor: progress;
-    color: white;
-}
-                    /* Bottom nav with link */
-#bottom__nav li{
-    display: inline-block;
-    }
-    #bottom__nav li a{
-    color: #dad6d8;
-    padding: 5px 0;
-    position: relative;
-    text-decoration: none;
-    font-size: 16px;
-    }
-#bottom__nav{
-    display: flex;
-    flex: 1;
-    text-align: center;
-    }
-#bottom__nav a:before{
+  .dropdown-menu {
+    padding: 0rem 0 !important;
+  }
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+    margin-top: 0;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+    font-weight: 700;
+  }
+  .navbar .nav-item:hover .dropdown-menu .dropdown-item:hover {
     background: red;
-    bottom: 0;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform-origin: right;
-    transform: scale(0);
-    transition: transform .4s linear;
-    width: 100%;
-    }
-#bottom__nav a:hover:before{
-    transform: scaleX(1);
-    transform-origin: left;    
-    }
-                    /* Icon and additional design finished here  */
-#social__links a{
-    background-color: white;
-    border-radius: 50%;
-    color: black;
-    display: inline-block;
-    height: 35px;
-    line-height: 35px;
-    margin: 0 10px 0px 0;
-    text-align: center;
-    transition: all 0.5s ease;
-    width: 35px;  
-    }
-.social{
-    float: right;
-    }
-#social__links a:hover{
-    color: #384f8a;
-    background-color: red;
-    }
-.col-md-1{
     color: white;
-    text-align: right;  
-    }
-.nav__bottom{
-    color: white;
-    font-size: 13px;
-    font-style: italic;
-    text-align: center;
-    }
-.footerLogo{
-    position: relative;
-    width: 150px;
-    float: right;
-    margin-top: -15px;   
-    }
-.footerLogo img:hover{
-    background-color: white;
-    }
-#text p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-style: italic;
-    }
-@media(max-width: 1100px) {
-    .footerContainer__top{
-        max-width: auto;
-        margin-right: 3%;
-        margin-left: 3%;
-    }
+  }
 }
-@media(max-width:800px){
-.footerContainer__top{
-    max-width: auto;
-    margin-right: 2%;
-    margin-left: 2%;
-    }
-#text h3{
-    font-size: 16px;
+/* ============================================================================
+                  Header Dropdown Hover end here
+=============================================================================*/
+
+/* ============================================================================
+                    Header part end here
+=============================================================================*/
+header .container {
+  background: black !important;
+  padding: 5px 0;
 }
-#text p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    font-style: italic;
-    } 
-#bottom__nav li a{
-    font-size: 10px;
+header .header__left {
+  color: white !important;
+  font-family: var(--body-font);
+  font-size: 13px;
+  margin-top: 2px;
+  font-weight: 500;
 }
-.nav__bottom{
-    font-size: 10px;
+header .header__left i {
+  padding: 0px 8px;
 }
+header .header__right {
+  color: white !important;
+  text-align: right;
+  font-family: var(--body-font);
+  font-size: 13px;
+  margin-top: 2px;
+  font-weight: 500;
 }
-@media(max-width:690px){
-#text h3{
-    font-size: 15px;
+header .header__right a {
+  color: white;
+  padding: 15px;
 }
-#text p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 10px;
-    font-style: italic;
-} 
+/* ============================================================================
+                    Header part end here
+=============================================================================*/
+/* ============================================================================
+                    Nav part start here
+=============================================================================*/
+.navbar {
+  font-family: var(--body-font) !important;
+  font-weight: 700;
+  font-size: 17px;
 }
+nav .container {
+  background: white !important;
+  box-shadow: 0px 3px 11px -7px black;
+  padding: 10px 0px;
+  padding-right: 5px;
+  height: 100%;
+  margin-bottom: -8px;
+  margin-top: -10px;
+}
+nav .container button {
+  border: 1px solid red;
+  font-weight: 700;
+}
+nav .container button:hover {
+  border: 1px solid black;
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+.navbar-toggler {
+  background: black;
+}
+.nav-link {
+  color: black !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+nav .container #logo {
+  width: 150px;
+  padding: 8px;
+}
+nav .container .nav-item {
+  margin-right: 10px;
+}
+
+/* ============================================================================
+                    Nav part end here
+=============================================================================*/
+
+/* ============================================================================
+                    Body part start here
+=============================================================================*/
+/* =====================================================================
+                   Faq Part start here
+=======================================================================*/
+
+/* ==========================Faq__left start here========================== */
+#faq {
+  margin-bottom: 100px;
+  position: relative;
+  margin-top: 50px;
+}
+#faq .container .content__left h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+#faq .container .content__left .line {
+  width: 155px;
+  height: 2px;
+  background: red;
+  margin: 10px 0;
+}
+#faq .container .content__left .text {
+  color: #555;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: left !important;
+  line-height: 1.6;
+  padding-right: 110px;
+  margin-bottom: 30px;
+}
+
+/* ==========================Accordion start here========================== */
+#faq .container .row {
+  background: hsl(0, 0%, 95%);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#faq .accordion-button::after {
+  display: none;
+}
+#faq .accordion-button {
+  color: white;
+  background-color: red;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+#faq .collapsed {
+  color: #000;
+  background-color: rgba(255, 0, 0, 0.125);
+  line-height: 1.3;
+  color: #232323;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+#faq .accordion-button i {
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  transform: rotate(90deg);
+}
+#faq .collapsed i {
+  transform: rotate(0deg);
+}
+#faq .accordion-body a {
+  color: black !important ;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ==========================Accordion end here========================== */
+
+/* ==========================Faq__left end here========================== */
+
+/* ==========================Faq__right start here========================== */
+#faq .container .content__right {
+  padding-left: 35px;
+}
+#faq .container .content__right h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+#faq .container .content__right .line {
+  width: 155px;
+  height: 2px;
+  background: red;
+  margin: 10px 0;
+}
+#faq .container .content__right .text {
+  color: #555;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: left !important;
+  line-height: 1.6;
+  padding-right: 110px;
+  margin-bottom: 30px;
+}
+
+/* ==========================Faq__right end here========================== */
+
+/* =====================================================================
+                   Faq Part end here
+=
+/* ============================================================================
+                    Body part end here
+=============================================================================*/
+
+
+/* =================================================================
+                  Footer part start here
+================================================================== */
+
+/* ==================================Footer Top start here============================= */
+footer .footer__top {
+  background: red;
+  margin-top: -16px !important;
+  width: 100%;
+}
+footer .footer__top i {
+  font-size: 25px;
+  padding: 16px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+footer .footer__top .row a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer__top .row ul {
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 4px 0px black;
+}
+
+footer .footer__top i::before {
+  background: red;
+  position: absolute;
+  padding: 16px;
+  border-radius: 50%;
+  right: -10px;
+  bottom: 4px;
+  -webkit-box-shadow: 0px 10px 18px 0px rgb(0 0 0 / 48%);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 48%);
+}
+/* ==================================Footer Top end here============================= */
+
+/* ==================================Footer Bottom start here============================= */
+footer .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .main a {
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: ease-in-out 0.5s;
+  font-weight: 500;
+}
+footer .main a:hover {
+  border: 1px solid red !important;
+  cursor: pointer;
+  color: black !important;
+  background: white;
+}
+footer #copyright {
+  text-decoration: none;
+  color: white;
+}
+
+/* ==================================Footer Bottom end here============================= */
+
+/* =================================================================
+                    Footer part end here
+================================================================== */
