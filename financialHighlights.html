@@ -4,196 +4,294 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Financial Highlights</title>
-    <link rel="shortcut icon" href="images/logo1.jpg" type="image/x-icon">
-    <script src="js/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/financialHighlights.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">  
+    <link rel="stylesheet" href="css/media/main.css">
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+                            integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+                            crossorigin="anonymous"/>
 </head>
 <body>    
-
-<!-- =================================================================================================
-                                        Header part Start here
-====================================================================================================-->
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="header__left">    
-             <i class="fas fa-phone-alt"></i><span>+968 24769800</span></li>
-             <i class="fas fa-envelope"></i><span>sahara@aaoman.com.om</span></li>      
-      </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="header__right">  
-              Road Map
-              <a href="login.html">Log In</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- =================================================================================================
-                                        Header part end here
-====================================================================================================-->
-<!-- =================================================================================================
-                                        Navbar Start here
-====================================================================================================-->
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a href="index.html"><img id="logo" src="images/logo1.jpg" alt=""></a>
-    <button class="navbar-toggler bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">  
-            About Us
-            <i class="fas fa-angle-down"></i>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="management.html">Management</a></li>
-            <li><a class="dropdown-item" href="property.html">Property</a></li>
-            <li><a class="dropdown-item" href="contacts.html">Location</a></li>
-            <li><a class="dropdown-item" href="acompany.html">Associated Companies</a></li>
-            <li><a class="dropdown-item" href="mission.html">Our Mission</a></li>
-            <li><a class="dropdown-item" href="investorsDesk.html">Business Support</a></li>
-            <li><a class="dropdown-item" href="career.html">Career</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">  
-              Our Business
-            <i class="fas fa-angle-down"></i>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="pacProjects.html">The PAC Project</a></li>
-            <li><a class="dropdown-item" href="facilities.html">Accomodation Facilities</a></li>
-            <li><a class="dropdown-item" href="operationalHighlights.html">Operational Highlights</a></li>
-            <li><a class="dropdown-item" href="others.html">Others</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">  
-            Investor Relations
-            <i class="fas fa-angle-down"></i>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="investorsDesk.html">Investors Desk</a></li>
-            <li><a class="dropdown-item" href="financialHighlights.html">Financial Highlights</a></li>
-            <li><a class="dropdown-item" href="investorsHelp.html">Investors Help</a></li>
-            <li><a class="dropdown-item" href="pressRoom.html">News</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="qhse.html">QHSE</a>
-        </li>
-        <a href="contacts.html"><button type="button" class="btn">Contact Us</button></a>     
+                    <!--Nav and Logo-->
+ <nav>
+                    <!-- preference for smaller screen -->
+      <input type="checkbox" id="check">
+      <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+      </label>
+                    <!-- logo with navbar -->
+      <a href="index.html">
+      <img src="images/logo1.jpg" alt="logo">   
+                    <!-- Top__navBar -->
+  <ul id="top__nav"> 
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Sitemap.html">Sitemap</a></li>
+  <li><a href="contactUs.html">Contact Us</a></li>
+  </ul>
+                    <!-- Lower NavBar -->
+      <ul id="new">
+          <li><a href="management.html">Management</a></li>
+          <li><a href="operationalHighlights.html">Operational Highlights</a></li>
+          <li><a href="financialHighlights.html" style="color:red;">Financial Highlights</a></li>
+          <li><a href="investorsDesk.html">Investors Desk</a></li>
+          <li><a href="aboutOman.html">About Oman</a></li>  
       </ul>
-    </div>
-  </div>
-</nav>
-<!-- =================================================================================================
-                                        Navbar end here
-====================================================================================================-->
+  </nav>
+                    <!-- NavBar end here -->
+                    <!-- body content start here -->
+<div class="finance">
+    <h1>Financial Stability of our Company</h1>
+    <p class="financeText">The authorized capital of SHC is RO 10 Million divided into 10 Million shares having a nominal value of RO 1 each.  
+        The issued and fully paid up capital is R.O. 5,833,333 divided into 5,833,333 ordinary shares of a nominal value of RO 1 each, 
+        which has been raised as follows:</p>
 
-<!-- =================================================================================================
-                                        Body part start here
-====================================================================================================-->
-<div class="container body">
-  <div class="card text-center">
-    <div class="card-header">Financial Highlights will be updated soon</div>
-    <div class="card-body">
-      <h5 class="card-title">Financial  Highlights</h5>
-      <p class="card-text">Companies financial stability will be drawn here within short period.</p>
-      <a href="index.html" class="btn btn-primary">Home</a>
-    </div>
-    <div class="card-footer liningText" data-texting="Updated_ Just now"> </div>
-  </div>
-</div>
-<!-- =================================================================================================
-                                        Body part end here
-====================================================================================================-->
+        <table class="table1">
+            <tr>
+                <th>Founder Shareholders</th>
+                <th>Amount (RO)</th>
+                <th>Percentage (%)</th>
+            </tr>
+            <tr>
+                <td>Catering and Supplies Co. L.L.C.</td>
+                <td>1,166,667</td>
+                <td>20%</td>
+            </tr>
 
-<!-- =================================================================================================
-                                        Footer part start here
-====================================================================================================-->
-<footer class="bg-black text-center text-white">
-  <div class="container p-3">
-<!-- ======================================Footer Top start here=================================== -->
-    <section class="footer__top">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <a href="contacts.html"><i class="fas fa-phone-alt"></i>
-          <ul class="list-unstyled mb-0">
-            <li><h5>How to reach us</h5></li>
-            <li><p>Tel:(968)24769800</p></li>
-          </ul>
-        </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <a href="pressRoom.html"><i class="fas fa-calendar-week"></i>
-          <ul class="list-unstyled mb-0">
-            <li><h5>News Room</h5></li>
-            <li><p>Find whats new in Sahara</p></li>
-          </ul>
-        </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <a href="awards.html"><i class="fas fa-award"></i>
-          <ul class="list-unstyled mb-0">
-            <li><h5>Awards & Accreditations</h5></li>
-            <li><p>Milestones we reached</p>
-            </li>
-          </ul>
-        </a>
-        </div>
-      </div>
-    </section>
-  </div>
-<!-- ======================================Footer Top end here=================================== -->
-<!-- ====================================Footer Bottom start here================================ -->
- <div class="container">
-  <div class="main">
-  <section class="mb-4">
-    <a class="btn btn-floating m-1" href="index.html" role="button">Home</a>
-    <a class="btn btn-floating m-1" href="financialHighlights.html" role="button">Financial Highlights</a>
-    <a class="btn btn-floating m-1" href="management.html" role="button">Management</a>
-    <a class="btn btn-floating m-1" href="gallery.html" role="button">Media Center</a>
-    <a class="btn btn-floating m-1" href="aboutOman.html" role="button">About Oman</a>
-    <a class="btn btn-floating m-1" href="sliteMap.html" role="button">Site Map</a>
-  </section>
-  <section class="mb-4">
-    <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-    <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-    <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-    <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-    <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-  </section>
+            <tr>
+                <td>Alawi Enterprises L.L.C.</td>
+                <td>1,166,667</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Mr. Adbulmunim Bin Qais Al Zawawi</td>
+                <td>350,000</td>
+                <td>6%</td>
+            </tr>
+            <tr>
+                <td>Mr. Talal Bin Qais Al Zawawi</td>
+                <td>350,000</td>
+                <td>6%</td>
+            </tr>
+            <tr>
+                <td>Al Jeel Investment L.L.C.</td>
+                <td>233,333</td>
+                <td>4%</td>
+            </tr>
+            <tr>
+                <td>Bank Muscat S.A.O.G.</td>
+                <td>233,333</td>
+                <td>4%</td>
+            </tr>
+            <tr>
+                <td>Public Subscription</td>
+                <td>2,333,333</td>
+                <td>40%</td>
+            </tr>
+            <tr id="total">
+                <td>TOTAL</td>
+                <td>5,833,333</td>
+                <td>100%</td>
+            </tr>
+        </table><br>
 </div>
+
+<div class="financialStatements">
+    <div class="statements">
+        <h1>Financial statements</h1>
+        <h3 id="statements">Financial Statements for 2020</h3>
+        <ul id="statements2020">
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/2020/SHC Audited FS 30-11-2020.pdf">Audited Financial Reports for 12 months ended 30 Nov 2020</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/2020/2020 3rd Qtr Report.pdf">Interim Report for the 9 months ended 31st Aug 2020</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/2020/2020 2nd Qtr Report.pdf">Interim Report for the 6 months ended 31st May 2020</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/2020/2020 1st Qtr Report.pdf">Interim Report for the 3 months ended 29th February 2020</a></li>
+        </ul>
+        <h3 id="statements">Financial Statements for 2019</h3>
+        <ul id="statements2019">
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/2019/SHC Audited FS 30-11-2019.pdf">Audited Financial Reports for 12 months ended 30 Nov 2019</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/2019/2019 3rd Qtr Report.pdf">Interim Report for the 9 months ended 31st Aug 2019</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/2019/2019 2nd Qtr Report.pdf">Interim Report for the 6 months ended 31st May 2019</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/2019/2019 1st Qtr Report.pdf">Interim Report for the 3 months ended 28th February 2019</a></li>
+        </ul>
+        <h3 id="statements">Financial Statements</h3>
+        <ul id="statementsmix">
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/mix/SHC Audited FS 30-11-2018.pdf">Audited Financial Reports for 12 months ended 30 Nov 2018</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/mix/SHC Audited FS 30-11-2017.pdf">Audited Financial Reports for 12 months ended 30 Nov 2017</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/mix/SHC Audited FS 30-11-2016.pdf">Audited Financial Reports for 12 months ended 30 Nov 2016</a></li>
+            <li><i class="fab fa-galactic-republic"></i><a href="Reports/financialStatements/mix/SHC Audited FS 30-11-2015.pdf">Audited Financial Reports for 12 months ended 30 Nov 2015</a></li>
+        </ul>
+    </div>
 </div>
-<!-- ====================================Footer Bottom end here================================ -->
-<!-- ====================================Copy Right part start here================================ -->
-<div  class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
-  © 2022 Copyright:  <a id="copyright" href="https://www.facebook.com/Noorlalu143/" target="blank">AA IT Department</a>
+
+<h1>Our Clients</h1>
+    <p class="financeText">List of our Major Clients:</p>
+
+<div class="clients">
+    <div class="clientsProfile">
+        <img src="image/clients/oxy.jpg">
+        <div class="clientsDetails">
+        <h3>Occidental of Oman Inc. (OXY)</h3>
+        <p>Work Category: Field Catering & Janitorial Services</p>
+        <p>Location: Safah & Wadi Laitham</p>
+        <p>Services start on: 1993 – Present</p>
+        <h4>contract Value: 6.69 Million (OMR)</h4>
+    </div>
+    </div>
+    <div class="clientsProfile1">
+    <img src="image/clients/exterran.jpg">
+        <div class="clientsDetails">
+        <h3>Exterran Middle East LLC</h3>
+        <p>Work Category: Catering, Housekeeping & Laundry services</p>
+        <p>Location: Daleel, Shams</p>
+        <p>Services start on: Jan. 2009 – Present</p>
+        <h4>contract Value: 0.41 Million (OMR)</h4>
+    </div> 
+    </div>
+        <div class="clientsProfile2">
+    <img src="image/clients/carillion.jpg">
+        <div class="clientsDetails">
+        <h3>Carillion Alawi LLC </h3>
+        <p>Work Category: Catering, Housekeeping, Laundry& Camp Management services</p>
+        <p>Location: PDO North, South  and Coastal</p>
+        <p>Services start on: July 2013 – Present</p>
+        <h4>contract Value: 44.61 Million (OMR)</h4>
+    </div> 
+    </div>
 </div>
-<!-- ====================================Copy Right part end here================================ -->
-</footer>
-<!-- ======================================================================
-                        Footer Part start here
-======================================================================= --> 
-<script src="js/bootstrap.bundle.min.js"></script>  
-<script src="js/updating.js"></script>
+
+<div class="clients">
+    <div class="clientsProfile">
+        <img src="image/clients/pdo.jpg">
+        <div class="clientsDetails">
+        <h3>Petroleum Development Oman LLC</h3>
+        <p>Work Category: Catering, Housekeeping &Camp Maintenance Services</p>
+        <p>Location: PDO Insourcing Project.</p>
+        <p>Services start on: Nov. 2015 – Present</p>
+        <h4>contract Value: 4.86 Million (OMR)</h4>
+    </div>
+    </div>
+    <div class="clientsProfile1">
+    <img src="image/clients/sarooj.jpg">
+        <div class="clientsDetails">
+        <h3>Sarooj Construction Co. LLC</h3>
+        <p>Work Category: Catering & Allied Services</p>
+        <p>Location: Khassab, BP Khazzan, Nimr, Mazyouna, Mitan</p>
+        <p>Services start on: Nov. 2011 – Present</p>
+        <h4>contract Value: 3.034 Million (OMR)</h4>
+    </div> 
+    </div>
+        <div class="clientsProfile2">
+    <img src="image/clients/rop.png">
+        <div class="clientsDetails">
+        <h3>Royal Oman Police </h3>
+        <p>Work Category: Catering, cleaning & laundry services</p>
+        <p>Location: 75+ locations across the country</p>
+        <p>Services start on: 1978 - Present</p>
+        <h4>contract Value: 20.397 Million (OMR)</h4>
+    </div> 
+    </div>
+</div>
+
+<div class="clients">
+    <div class="clientsProfile">
+        <img src="image/clients/nationalDrilling.jpg">
+        <div class="clientsDetails">
+        <h3>National Drilling Services LLC</h3>
+        <p>Work Category: Catering, housekeeping & laundry services</p>
+        <p>Location: Rigs 31 & 32.</p>
+        <p>Services start on: 1997 - Present</p>
+        <h4>contract Value: 0.558 Million (OMR)</h4>
+    </div>
+    </div>
+    <div class="clientsProfile1">
+    <img src="image/clients/nizwaTourist.jpg">
+        <div class="clientsDetails">
+        <h3>Nizwa Tourist Co. LLC </h3>
+        <p>Work Category: Management of Hotel and related services</p>
+        <p>Location: Falaj Daris Hotel, Nizwa</p>
+        <p>Services start on: 2006 - Present</p>
+        <h4>contract Value: 0.94 Million (OMR)</h4>
+    </div> 
+    </div>
+    </div>
+                    <!-- body content end here       -->
+                    <!--Footer with responsive area-->
+<footer>
+        <div class="footer">
+            <div class="footerContainer__top">          
+                <div class="footerIcon__top" >                   
+                    <div class="footer__text">
+                        <div class="footerIcon__top__icon">
+                                <a href="contactUs.html"><i class="fas fa-phone-alt" ></i></a>
+                        </div>
+                            <div id="text">
+                                <h3 class="footer-heading;">How to Contact US</h3>
+                                <p>Tel:(968)24769800,Fax:(968)24787830</p>
+                            </div>
+                            <div id="plusSign">
+                                <a href="contactUs.html"><p><abbr title="Press the icon to know more">+</abbr></p></a>
+                            </div>
+                    </div>
+                <div class="footer__text">
+                    <div class="footerIcon__top__icon">
+                                <a href="pressRoom.html"><i class="fas fa-calendar-week"></i></a>
+                    </div>
+                            <div id="text">
+                                <h3 class="footer-heading;">Press Room</h3>
+                                <p>Find whats new in Sahara.</p>
+                            </div>
+                            <div id="plusSign">
+                                <a href="pressRoom.html"><p><abbr title="Press the icon to know more">+</abbr></p></a>
+                            </div>
+                </div>
+                <div class="footer__text">
+                            <div class="footerIcon__top__icon">
+                                <a href="awards.html"><i class="fas fa-award"></i></a>
+                            </div>
+                            <div id="text">
+                                <h3 class="footer-heading;">Awards & Accreditations</h3>
+                                <p>Milestones we reached.</p>
+                            </div>
+                            <div id="plusSign">
+                                <a href="awards.html"><p><abbr title="Press the icon to know more">+</abbr></p></a>
+                            </div>
+                </div>
+            </div>
+        </div>
+           <div class="footerContainer__bottom">
+               <div class="footerContainer__bottom__navbar">
+                   <ul id="bottom__nav">
+                    <li><a href="index.html">                  Home</a> <span><strong>&nbsp;| &nbsp;</strong></span></li>
+                    <li><a href="management.html">             Management</a> <span><strong>&nbsp;| &nbsp;</strong></span></li>
+                    <li><a href="operationalHighlights.html">  Operational Highlights</a> <span><strong>&nbsp;| &nbsp;</strong></span></li>
+                    <li><a href="investorsDesk.html">          Investor's Desk</a> <span><strong>&nbsp;| &nbsp;</strong></span></li>
+                    <li><a href="aboutOman.html">              About Oman</a> <span><strong>&nbsp;| &nbsp;</strong></span></li>
+                    <li><a href="Career.html">                 Career</a> <span><strong>&nbsp;| &nbsp;</strong></span></li>
+                    <li><a href="contactUs.html">              Contact Us</a> <span><strong>&nbsp;| &nbsp;</strong></span></li>
+                </ul>
+                </div>
+            </div>
+            <div class="footerIcon__bottom__icon">
+            <div class="footerIcon__bottom__icon__social">
+            <div class="social">
+            <div id="social__links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fab fa-google-plus"></i></a>
+            </div>
+            </div>
+        </div>    
+    </div>              
+        <div class="footerLogo">
+            <a href="index.html">  <img  src="images/logo_noBackground.png" width="80%" height="80%" alt=""/>
+            </a>
+        </div>
+         <div class="nav__bottom">
+            Site is developed & Maintained by_AA Group - IT Team
+        </div>             
+</footer>   
 </body>
 </html>
